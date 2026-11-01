@@ -25,7 +25,7 @@ public class Serveur4_3 {
         System.out.println("Le serveur peut aussi écrire des messages pour les envoyer aux clients.");
         System.out.println("En attente de messages...\n");
 
-        // --- Thread pour permettre au SERVEUR de PARLER (écrire des messages) ---
+        // Thread pour permettre au SERVEUR de PARLER (écrire des messages)
         // Ce thread lit ce que tape l'administrateur dans la console du serveur et l'envoie à tous les clients
         Thread threadEnvoiServeur = new Thread(new Runnable() {
             @Override
@@ -57,7 +57,7 @@ public class Serveur4_3 {
         });
         threadEnvoiServeur.start();
 
-        // --- Thread principal : RÉCEPTION et DIFFUSION des messages reçus ---
+        // Thread principal : RÉCEPTION et DIFFUSION des messages reçus
         while (true) {
             // 1) Attendre et recevoir un paquet UDP
             DatagramPacket paquet = new DatagramPacket(buffer, buffer.length);
