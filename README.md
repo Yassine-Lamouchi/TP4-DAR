@@ -3,7 +3,7 @@
 **Département d'Informatique et des Communications**  
 **Matière :** Développement d'applications réparties (DAR)  
 **Responsable du cours :** Amal ABID  
-**Enseignante des TPs :** Zeineb DAOUD  
+**Enseignante des TPs :** Amal ABID  
 **Année Universitaire :** 2026-2027  
 **Auditoire :** LSI 3 (Groupe 2.1)
 
