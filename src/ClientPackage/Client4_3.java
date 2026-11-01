@@ -20,7 +20,7 @@ public class Client4_3 {
         InetAddress adresseServeur = InetAddress.getByName("localhost");
         int portServeur = 1234;
 
-        // --- Thread de RÉCEPTION (tourne en arrière-plan) ---
+        // Thread de RÉCEPTION (tourne en arrière-plan)
         // Ce thread écoute en permanence les messages envoyés par le serveur
         Thread threadReception = new Thread(new Runnable() {
             @Override
@@ -51,7 +51,7 @@ public class Client4_3 {
 
         System.out.println("--- Connecté au chat ! (Tapez vos messages, ou 'exit' pour quitter) ---\n");
 
-        // --- Thread principal : LECTURE et ENVOI des messages ---
+        // Thread principal : LECTURE et ENVOI des messages
         while (true) {
             String messageSaisi = scanner.nextLine();
 
